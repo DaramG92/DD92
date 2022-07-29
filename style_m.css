@@ -1,0 +1,62 @@
+/* 모든값이 100%라 보면됨 */
+/* position > 1.static 2.relative 는 자기 사이즈를 인식한다.  */
+/* 3.absolute는 독립좌표. 좌표값만 존재함.  4.fixed는 무조건 화면기준.  */
+.header h2{
+    width: 100%;
+    text-align: center;
+}
+.header::before{
+    padding-top: 25%;
+}
+.header h2 img{
+    /* 부모가 포함되는게 우선순위가 높기땜에 h2넣어준 경로쓰... */
+    width: 50%;
+}
+.header ul{
+    position: fixed;
+    /* 항상떠있게 해주시고 */
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    right: -100%;
+    top:0;
+    transition: all 0.5s;
+}
+.header .right{
+    right:0;
+}
+.header li{
+    width: 100%;
+    height: 20%;
+    line-height: 25vmax;
+    text-align: center;
+}
+.header li a{
+    color:white;
+    font-size: 3vw;
+}
+.content .aside,
+.content .section{
+    width: 100%;
+}
+.section :nth-child(1),
+.section :nth-child(2),
+.section :nth-child(3),
+.section :nth-child(4){
+    width: 100%;
+}
+.aside li p{
+    line-height: 3em;
+    font-size: 2em;
+}
+.header svg{
+    width: 5%;
+    position: absolute;
+    right: 1%;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 11;
+    display: block;
+}

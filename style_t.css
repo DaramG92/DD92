@@ -1,0 +1,22 @@
+/* tablet */
+*{
+    transition: all 0.2s;
+}
+.section ul{
+    top: 2%;
+}
+.section li{
+    width: 49%;
+    margin: 0;
+}
+.section li:nth-child(1),
+.section li:nth-child(2){
+    margin-bottom: 1%;
+}
+.section li:last-child{
+    width: 49%;
+    margin: 0;
+}
+.section li::before{
+    padding-top: 34%;
+}

@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.5vw;
+    /* 가로기준 계속 갱신됨. */
+}
+ul{
+    list-style: none;
+}
+a:link , a:visited{
+    text-decoration: none;
+    color:#333333;
+}
+
+.header{
+    width:100%;
+    position: relative;
+}
+
+.header::before{
+    content:'';
+    display: block;
+    padding-top: 5%;
+}
+.header h2{
+    width:10%;
+    position: absolute;
+    left:2%;
+    z-index: 2;
+    top:50%;
+    transform: translateY(-50%);
+}
+.header h2 img{
+    width:100%;
+}
+.header ul{
+    width: 50%;
+    position: absolute;
+    right:0;
+    display: flex;
+    flex-wrap:wrap;
+    top: 50%;
+    bottom: 0;
+}
+.header li{
+    width:20%;
+    text-align: center;
+    font:bold 0.7em sans-serif;
+    /* 가변 폰트크기 em~~ 배수단위니까 화면줄이면 같이 줄어들지 */
+}
+.main{
+    width:100%;
+    background: url(./images/풍경집.jpg) center/cover;
+}
+.main::before{
+    content:'';
+    display: block;
+    padding-top: 35%;
+}
+.content{
+    width:100%;
+    height: auto;
+    /* 기본값은 auto라고.. */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .aside{
+    width:30%;
+    position: relative;
+    background-color: rgba(211, 206, 206, 0.3) top/cover;
+}
+
+.aside ul{
+    width:100%;
+    margin:2% auto;
+}
+.aside li{
+    width:100%;
+    position: relative;
+    margin-top: 2%;
+}
+.aside li:nth-child(1){
+    background: url(./images/자연집.jpg) center/cover;
+
+}
+.aside li:nth-child(2){
+    background: url(./images/우리집집.jpg) center/cover;
+}
+.aside li p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 0.8em;
+    color:white;
+}
+.aside li::before{
+    display: block;
+    content:'';
+    padding-top:40%;
+    /* background-color: red; */
+}
+
+.content .section{
+    width:70%;
+    position: relative;
+    /* background-color: rgba(211, 206, 206, 0.3); */
+}
+
+.section ul{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:1%;
+}
+.section li{
+    width: 32.8%;
+    margin-bottom: 1%;
+    margin-top: -1px;
+    position: relative;
+    /* ul,li가 부모관계긴하지만. ul이 absolute여도 자식은 static상태고. relative도 가능하다 */
+}
+.section li:nth-child(1){
+    background: url(./images/나무의집.jpg) center/cover;
+}
+.section li:nth-child(2){
+    background: url(./images/창의집.jpg) top/cover;
+}
+.section li:nth-child(3){
+    background: url(./images/세로의집.jpg) center/cover;
+}
+.section li:nth-child(4){
+    background: url(./images/양의집.jpg) center/cover;
+}
+.section li p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
+    color:white;
+    font:bold 15px sans-serif;
+    text-align: center;
+    /* 3px:퍼짐정도.. */
+}
+.section li:last-child{
+    width:100%;
+    margin-top: 0;
+    /* 딱 끝까지 붙여놓는.. */
+}
+.section li::before{
+    display: block;
+    content: '';
+    padding-top:64%;
+    /* background-color: blue; */
+}
+.section li:last-child:before{
+    padding-top: 13%;
+    /* padding만든이유: 화면크기 줄였을때 같이줄어~. */
+}
+.footer{
+    position: relative;
+    background:url(./images/footer1.jpg);
+    left: 50%;
+    margin-top:0;
+    transform: translateX(-50%);   
+}
+.footer::before{
+    display: block;
+    content: '';
+    padding: 4%;
+}
+.header svg{
+    display: none;
+    /* 그럼 피씨버전에선 안보이겠지 */
+}
