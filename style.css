@@ -4,7 +4,6 @@
 }
 body{
     font-size: 1.5vw;
-    /* 가로기준 계속 갱신됨. */
 }
 ul{
     list-style: none;
@@ -25,12 +24,12 @@ a:link , a:visited{
     padding-top: 5%;
 }
 .header h2{
-    width:10%;
+    width: 11%;
     position: absolute;
-    left:2%;
+    left: 2%;
     z-index: 2;
-    top:50%;
-    transform: translateY(-50%);
+    top: 9%;
+    transform: translateY(-25%)
 }
 .header h2 img{
     width:100%;
@@ -48,7 +47,9 @@ a:link , a:visited{
     width:20%;
     text-align: center;
     font:bold 0.7em sans-serif;
-    /* 가변 폰트크기 em~~ 배수단위니까 화면줄이면 같이 줄어들지 */
+}
+.header li a:hover{
+    color:lightgray;
 }
 .main{
     width:100%;
@@ -62,7 +63,6 @@ a:link , a:visited{
 .content{
     width:100%;
     height: auto;
-    /* 기본값은 auto라고.. */
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +105,6 @@ a:link , a:visited{
     display: block;
     content:'';
     padding-top:40%;
-    /* background-color: red; */
 }
 
 .content .section{
@@ -170,7 +169,7 @@ a:link , a:visited{
 .footer{
     position: relative;
     background:url(./images/footer1.jpg);
-    left: 50%;
+    left: 60%;
     margin-top:0;
     transform: translateX(-50%);   
 }

@@ -18,7 +18,7 @@
     z-index: 10;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     flex-direction: column;
     right: -100%;
     top:0;
@@ -52,11 +52,16 @@
     font-size: 2em;
 }
 .header svg{
-    width: 5%;
+    width: 5.5%;
     position: absolute;
-    right: 1%;
-    top: 45%;
+    right: 2%;
+    top: 57%;
     transform: translateY(-50%);
     z-index: 11;
     display: block;
+    cursor: pointer;
 }
+.header svg:hover{
+    fill: lightgrey;
+}
+
