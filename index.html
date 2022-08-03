@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MUJI HOUSE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_t.css" media="all and (min-width:700px) and (max-width:1280px)">
     <link rel="stylesheet" href="style_m.css" media="all and (max-width:700px)">
@@ -22,7 +22,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="menu"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
     </div>
     <div class="main">
-     <!-- 메인에 html에서 아무것도 없으니까 css에서 ::before잡아서 넣어줌  -->
     </div>
     <div class="content">
         <div class="aside">
@@ -58,9 +57,6 @@
         
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- 구글에서 jquery를 온라인으로 제공해주는것. 업데이트 안해도 인터넷연결돼있으면 알아서 고쳐주는. -->
-    <!-- 맨위에 놨을땐 얘가 defer가 들어가있어야함. (맨위있을경우는)아무것도 구조없는상태에서 실행될때는 넣어야됨 (왜냐면 순서대로 시행되기때문!)
-    여기있을땐 맨뒤니까 defer안넣어도되고...! -->
     <script>
         $('.menu').click(function(){
             $('.header ul').toggleClass('right');

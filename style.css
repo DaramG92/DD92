@@ -110,7 +110,6 @@ a:link , a:visited{
 .content .section{
     width:70%;
     position: relative;
-    /* background-color: rgba(211, 206, 206, 0.3); */
 }
 
 .section ul{
@@ -125,7 +124,6 @@ a:link , a:visited{
     margin-bottom: 1%;
     margin-top: -1px;
     position: relative;
-    /* ul,li가 부모관계긴하지만. ul이 absolute여도 자식은 static상태고. relative도 가능하다 */
 }
 .section li:nth-child(1){
     background: url(./images/나무의집.jpg) center/cover;
@@ -149,22 +147,18 @@ a:link , a:visited{
     color:white;
     font:bold 15px sans-serif;
     text-align: center;
-    /* 3px:퍼짐정도.. */
 }
 .section li:last-child{
     width:100%;
     margin-top: 0;
-    /* 딱 끝까지 붙여놓는.. */
 }
 .section li::before{
     display: block;
     content: '';
     padding-top:64%;
-    /* background-color: blue; */
 }
 .section li:last-child:before{
     padding-top: 13%;
-    /* padding만든이유: 화면크기 줄였을때 같이줄어~. */
 }
 .footer{
     position: relative;
@@ -180,5 +174,4 @@ a:link , a:visited{
 }
 .header svg{
     display: none;
-    /* 그럼 피씨버전에선 안보이겠지 */
 }

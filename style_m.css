@@ -1,6 +1,3 @@
-/* 모든값이 100%라 보면됨 */
-/* position > 1.static 2.relative 는 자기 사이즈를 인식한다.  */
-/* 3.absolute는 독립좌표. 좌표값만 존재함.  4.fixed는 무조건 화면기준.  */
 .header h2{
     width: 100%;
     text-align: center;
@@ -9,12 +6,10 @@
     padding-top: 25%;
 }
 .header h2 img{
-    /* 부모가 포함되는게 우선순위가 높기땜에 h2넣어준 경로쓰... */
     width: 50%;
 }
 .header ul{
     position: fixed;
-    /* 항상떠있게 해주시고 */
     z-index: 10;
     width: 100%;
     height: 100%;
