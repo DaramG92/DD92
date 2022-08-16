@@ -163,7 +163,7 @@ a:link , a:visited{
 .footer{
     position: relative;
     background:url(./images/footer1.jpg);
-    left: 60%;
+    left: 50%;
     margin-top:0;
     transform: translateX(-50%);   
 }
